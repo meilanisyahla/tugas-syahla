@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="hasil"></p>
+  <script>
+    let hasil = document.getElementById('hasil')
+    for (let i=1; i<= 100; i+=2)  {// i nya ingkremen
+         console.log("saya tidak akan mengulangi perbuatan itu lagi" + i)
+         // hasil innerhtml =hasil.innerhtml + 1 9akan trus berulang)
+         // hallo string di gabung
+         hasil.innerHTML +='saya tidak akan mengulagi itu lagi : ${1<br>}'
+    } 
+
+    let a = 10 //inisitusi ingkremen
+    while (a > 0) {
+      console.log("saya tidak akan mengulangi perbuatan itu lagi" + a)
+      a-=1
+    }
+  </script> 
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+   <form action="" onsubmit="return false">
+      masukkan nama <input type="text" id="nama">
+      masukkan usia <input type="text" id="usia">
+      <button onclick="cek()">cek hasil</button>
+   </form>
+   <p id="hasil"></p>
+   <script>
+      function cek() {
+         let nama=document.getElementById('nama').value
+         let usia=document.getElementById('usia').value
+         if (usia>17) {
+         document.getElementById("hasil").innerHTML =`${nama}, kamu boleh nonton`
+         } else{
+            document.getElementById("hasil").innerHTML = nama + ", kamu tidak boleh nonton"
+      }
+   }
+   </script>
+</body>
+</html>
